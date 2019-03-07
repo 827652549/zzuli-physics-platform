@@ -80,35 +80,35 @@ class showData extends Component {
                                                 <div className='divTableTh'>增荷时（mm）</div>
                                             </Col>
                                             <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput' name='n0'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.n0} name='n0'/>
                                                 </div>
                                             </Col>
                                             <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput' name='n1'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.n1} name='n1'/>
                                                 </div>
                                             </Col>
                                             <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput' name='n2'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.n2} name='n2'/>
                                                 </div>
                                             </Col>
                                             <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput' name='n3'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.n3} name='n3'/>
                                                 </div>
                                             </Col>
                                             <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput' name='n4'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.n4} name='n4'/>
                                                 </div>
                                             </Col>
                                             <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput' name='n5'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.n5} name='n5'/>
                                                 </div>
                                             </Col>
                                             <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput' name='n6'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.n6} name='n6'/>
                                                 </div>
                                             </Col>
                                             <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput' name='n7'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.n7} name='n7'/>
                                                 </div>
                                             </Col>
                                         </Row>
@@ -117,35 +117,35 @@ class showData extends Component {
                                                 <div className='divTableTh'>减荷时（mm）</div>
                                             </Col>
                                             <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput' name='n_0'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.n_0} name='n_0'/>
                                                 </div>
                                             </Col>
                                             <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput' name='n_1'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.n_1} name='n_1'/>
                                                 </div>
                                             </Col>
                                             <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput' name='n_2'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.n_2} name='n_2'/>
                                                 </div>
                                             </Col>
                                             <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput' name='n_3'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.n_3} name='n_3'/>
                                                 </div>
                                             </Col>
                                             <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput' name='n_4'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.n_4} name='n_4'/>
                                                 </div>
                                             </Col>
                                             <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput' name='n_5'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.n_5} name='n_5'/>
                                                 </div>
                                             </Col>
                                             <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput' name='n_6'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.n_6} name='n_6'/>
                                                 </div>
                                             </Col>
                                             <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput' name='n_7'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.n_7} name='n_7'/>
                                                 </div>
                                             </Col>
                                         </Row>
@@ -154,35 +154,35 @@ class showData extends Component {
                                                 <div className='divTableTh'>加减荷平均值（mm）</div>
                                             </Col>
                                             <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput' name='n0_avg'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.n0_avg} name='n0_avg'/>
                                                 </div>
                                             </Col>
                                             <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput' name='n1_avg'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.n1_avg} name='n1_avg'/>
                                                 </div>
                                             </Col>
                                             <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput' name='n2_avg'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.n2_avg} name='n2_avg'/>
                                                 </div>
                                             </Col>
                                             <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput' name='n3_avg'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.n3_avg} name='n3_avg'/>
                                                 </div>
                                             </Col>
                                             <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput' name='n4_avg'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.n4_avg} name='n4_avg'/>
                                                 </div>
                                             </Col>
                                             <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput' name='n5_avg'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.n5_avg} name='n5_avg'/>
                                                 </div>
                                             </Col>
                                             <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput' name='n6_avg'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.n6_avg} name='n6_avg'/>
                                                 </div>
                                             </Col>
                                             <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput' name='n7_avg'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.n7_avg} name='n7_avg'/>
                                                 </div>
                                             </Col>
                                         </Row>
@@ -217,27 +217,27 @@ class showData extends Component {
                                                 <div className='divTableTh'>d（mm）</div>
                                             </Col>
                                             <Col span={3}>
-                                                <div className='divTableTd'><Input className='divInput' name='d1'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.d1} name='d1'/>
                                                 </div>
                                             </Col>
                                             <Col span={3}>
-                                                <div className='divTableTd'><Input className='divInput' name='d2'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.d2} name='d2'/>
                                                 </div>
                                             </Col>
                                             <Col span={3}>
-                                                <div className='divTableTd'><Input className='divInput' name='d3'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.d3} name='d3'/>
                                                 </div>
                                             </Col>
                                             <Col span={3}>
-                                                <div className='divTableTd'><Input className='divInput' name='d4'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.d4} name='d4'/>
                                                 </div>
                                             </Col>
                                             <Col span={3}>
-                                                <div className='divTableTd'><Input className='divInput' name='d5'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.d5} name='d5'/>
                                                 </div>
                                             </Col>
                                             <Col span={3}>
-                                                <div className='divTableTd'><Input className='divInput' name='d6'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.d6} name='d6'/>
                                                 </div>
                                             </Col>
 
@@ -247,7 +247,7 @@ class showData extends Component {
                                                 <div className='divTableTh'>d的平均值（mm）</div>
                                             </Col>
                                             <Col span={18}>
-                                                <div className='divTableTd'><Input className='divInput' name='d_avg'/>
+                                                <div className='divTableTd'><Input className='divInput' value={this.props.d_avg} name='d_avg'/>
                                                 </div>
                                             </Col>
 
@@ -255,32 +255,32 @@ class showData extends Component {
                                         <h3>测量条件</h3>
                                         <hr/>
                                         <Row gutter={24}>
-                                            <Col span={6}><strong>螺旋测微器允差</strong><br/><Input name='micrometer'/></Col>
-                                            <Col span={6}><strong>金属丝原长L</strong><br/><Input name='L'
+                                            <Col span={6}><strong>螺旋测微器允差</strong><br/><Input name='micrometer' value={this.props.micrometer} /></Col>
+                                            <Col span={6}><strong>金属丝原长L</strong><br/><Input name='L' value={this.props.L}
                                             /></Col>
-                                            <Col span={6}><strong>金属丝原长不确定度</strong><br/><Input name='delta_L'/></Col>
-                                            <Col span={6}><strong>光杆与镜尺距离</strong><br/><Input name='D'/></Col>
+                                            <Col span={6}><strong>金属丝原长不确定度</strong><br/><Input value={this.props.delta_L} name='delta_L'/></Col>
+                                            <Col span={6}><strong>光杆与镜尺距离</strong><br/><Input value={this.props.D} name='D'/></Col>
                                         </Row>
                                         <Row gutter={24}>
-                                            <Col span={6}><strong>光杆与镜尺距离不确定度</strong><br/><Input
+                                            <Col span={6}><strong>光杆与镜尺距离不确定度</strong><br/><Input value={this.props.delta_D}
                                                 name='delta_D'/></Col>
-                                            <Col span={6}><strong>游标卡尺允差</strong><br/><Input name='verniercaliper'
+                                            <Col span={6}><strong>游标卡尺允差</strong><br/><Input value={this.props.verniercaliper} name='verniercaliper'
                                             /></Col>
-                                            <Col span={6}><strong>光杆常数</strong><br/><Input name='K'/></Col>
-                                            <Col span={6}><strong>光杆常数不确定度</strong><br/><Input name='delta_K'/></Col>
+                                            <Col span={6}><strong>光杆常数</strong><br/><Input value={this.props.K} name='K'/></Col>
+                                            <Col span={6}><strong>光杆常数不确定度</strong><br/><Input value={this.props.delta_K} name='delta_K'/></Col>
                                         </Row>
                                         <br/>
                                         <h3>最终结果</h3>
                                         <hr/>
                                         <Row gutter={24}>
-                                            <Col span={6}><strong>d的不确定度</strong><br/><Input
+                                            <Col span={6}><strong>d的不确定度</strong><br/><Input value={this.props.delta_dn}
                                                 name='delta_dn'/></Col>
-                                            <Col span={6}><strong>l的不确定度</strong><br/><Input
+                                            <Col span={6}><strong>l的不确定度</strong><br/><Input value={this.props.delta_ln}
                                                 className='delta_ln'
                                             /></Col>
-                                            <Col span={6}><strong>杨氏模量</strong><br/><Input name='E'/></Col>
-                                            <Col span={6}><strong>不确定度</strong><br/><Input name='delta_E'/></Col>
-                                            <Col span={6}><strong>相对不确定度</strong><br/><Input name='relative_E'/></Col>
+                                            <Col span={6}><strong>杨氏模量</strong><br/><Input value={this.props.E} name='E'/></Col>
+                                            <Col span={6}><strong>不确定度</strong><br/><Input value={this.props.delta_E} name='delta_E'/></Col>
+                                            <Col span={6}><strong>相对不确定度</strong><br/><Input value={this.props.relative_E} name='relative_E'/></Col>
                                         </Row>
                                         <br/>
 

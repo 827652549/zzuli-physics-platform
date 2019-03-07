@@ -108,11 +108,10 @@ export const Addition=styled.div`
     height:56px;
 `;
 export const Button=styled.div`
-    float:right;
     line-height:38px;
     margin-top:9px;
     margin-right:20px;
-    padding:0 20px;
+    font-size:17px;
     &.reg{
         color:#bae7ff;
     }

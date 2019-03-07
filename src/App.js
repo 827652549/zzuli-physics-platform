@@ -7,11 +7,13 @@ import Header from './common/header';//'/index'可以省略
 import {IconSytle} from './statics/iconfont/iconfont';
 import Home from './pages/home';
 import NewtonRing from './pages/detail/physicalExperiment/newton-ring';
-import MichelsonInterferometer from './pages/detail/physicalExperiment/michelson-interferometer';
-import Staticyoungmodulus from './pages/detail/physicalExperiment/staticYoungmodulus';
 import NewtonRingShowData from './pages/detail/physicalExperiment/newton-ring/showData';
+import MichelsonInterferometer from './pages/detail/physicalExperiment/michelson-interferometer';
 import MichelsonInterferometerShowData from './pages/detail/physicalExperiment/michelson-interferometer/showData';
+import Staticyoungmodulus from './pages/detail/physicalExperiment/staticYoungmodulus';
 import StaticyoungmodulusShowData from './pages/detail/physicalExperiment/staticYoungmodulus/showData';
+import Spectrometer from './pages/detail/physicalExperiment/spectrometer';
+import SpectrometerShowData from './pages/detail/physicalExperiment/spectrometer/showData';
 import listWay from './pages/detail/dataHandle/listWay';
 import drawPicture from "./pages/detail/dataHandle/drawPicture";
 import zhuChaWay from "./pages/detail/dataHandle/zhuChaWay";
@@ -51,6 +53,11 @@ class App extends Component {
                             <Route path='/physicalExperiment/2' exact component={Staticyoungmodulus}></Route>
                             {/*杨氏静态二级页面*/}
                             <Route path='/physicalExperiment/2/showData' exact component={StaticyoungmodulusShowData}></Route>
+
+                            {/*分光计一级页面*/}
+                            <Route path='/physicalExperiment/3' exact component={Spectrometer}></Route>
+                            {/*分光计二级页面*/}
+                            <Route path='/physicalExperiment/3/showData' exact component={SpectrometerShowData}></Route>
 
                             {/*列表法*/}
                             <Route path='/dataHandle/0' exact component={listWay}></Route>

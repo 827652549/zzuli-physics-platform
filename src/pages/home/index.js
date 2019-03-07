@@ -24,7 +24,7 @@ const data3 = [
     '牛顿环法测透镜曲率半径',
     '迈克尔逊干涉仪',
     '杨氏静态模量实验',
-    'Australian walks 100km after outback crash.',
+    '分光计的调整和使用',
 
 ];
 const data4 = [];
@@ -54,7 +54,7 @@ class Home extends Component {
                                     </Carousel>
                                     <hr/>
                                     <Row>
-                                        <Col span={6}>
+                                        <Col xs={24} xl={6}>
                                             <List
                                                 className='list'
                                                 header={<h2>数据处理方法</h2>}
@@ -63,7 +63,7 @@ class Home extends Component {
                                                 renderItem={(item,index) => (<List.Item className='list'><Link  id='link' to={'/dataHandle/'+index}><span>{item}</span></Link></List.Item>)}
                                             />
                                         </Col>
-                                        <Col span={6}>
+                                        <Col xs={24} xl={6}>
                                             <List
                                                 className='list'
                                                 header={<h2>通用工具</h2>}
@@ -72,7 +72,7 @@ class Home extends Component {
                                                 renderItem={item => (<List.Item className='list'><Link  id='link' to={'/detail/1'}><span>{item}</span></Link></List.Item>)}
                                             />
                                         </Col>
-                                        <Col span={6}>
+                                        <Col xs={24} xl={6}>
                                             <List
                                                 className='list'
                                                 header={<h2>实验项目A</h2>}
@@ -83,7 +83,7 @@ class Home extends Component {
                                                 </List.Item>)}
                                             />
                                         </Col>
-                                        <Col span={6}>
+                                        <Col xs={24} xl={6}>
                                             <List
                                                 className='list'
                                                 header={<h2>实验项目B</h2>}

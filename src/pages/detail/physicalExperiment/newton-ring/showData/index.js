@@ -75,19 +75,19 @@ class showData extends Component {
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    value={this.props.l35}
-                                                                                   disabled={true}
+
                                                                                    name='l35'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
-                                                                                   disabled={true}
+
                                                                                    value={this.props.l34}
 
                                                                                    name='l34'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
-                                                                                   disabled={true}
+
                                                                                    value={this.props.l33}
 
                                                                                    name='l33'/></div>
@@ -95,19 +95,19 @@ class showData extends Component {
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    value={this.props.l32}
-                                                                                   disabled={true}
+
                                                                                    name='l32'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    value={this.props.l31}
-                                                                                   disabled={true}
+
                                                                                    name='l31'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    value={this.props.l30}
-                                                                                   disabled={true}
+
                                                                                    name='l30'/></div>
                                             </Col>
                                         </Row>
@@ -118,37 +118,37 @@ class showData extends Component {
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    value={this.props.r35}
-                                                                                   disabled={true}
+
                                                                                    name='r35'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    value={this.props.r34}
-                                                                                   disabled={true}
+
                                                                                    name='r34'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    value={this.props.r33}
-                                                                                   disabled={true}
+
                                                                                    name='r33'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    value={this.props.r32}
-                                                                                   disabled={true}
+
                                                                                    name='r32'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    value={this.props.r31}
-                                                                                   disabled={true}
+
                                                                                    name='r31'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    value={this.props.r30}
-                                                                                   disabled={true}
+
                                                                                    name='r30'/></div>
                                             </Col>
                                         </Row>
@@ -160,36 +160,36 @@ class showData extends Component {
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    name='d35'
                                                                                    value={this.props.d35}
-                                                                                   disabled={true}
+
                                                 /></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
-                                                                                   disabled={true}
+
                                                                                    value={this.props.d34}
                                                                                    name='d34'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
-                                                                                   disabled={true}
+
                                                                                    value={this.props.d33}
                                                                                    name='d33'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
-                                                                                   disabled={true}
+
                                                                                    value={this.props.d32}
                                                                                    name='d32'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
-                                                                                   disabled={true}
+
                                                                                    value={this.props.d31}
                                                                                    name='d31'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
-                                                                                   disabled={true}
+
                                                                                    value={this.props.d30}
                                                                                    name='d30'/></div>
                                             </Col>
@@ -224,37 +224,37 @@ class showData extends Component {
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    value={this.props.l15}
-                                                                                   disabled={true}
+
                                                                                    name='l15'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    value={this.props.l14}
-                                                                                   disabled={true}
+
                                                                                    name='l14'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    value={this.props.l13}
-                                                                                   disabled={true}
+
                                                                                    name='l13'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    value={this.props.l12}
-                                                                                   disabled={true}
+
                                                                                    name='l12'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    value={this.props.l11}
-                                                                                   disabled={true}
+
                                                                                    name='l11'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    value={this.props.l10}
-                                                                                   disabled={true}
+
                                                                                    name='l10'/></div>
                                             </Col>
                                         </Row>
@@ -265,37 +265,37 @@ class showData extends Component {
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    value={this.props.r15}
-                                                                                   disabled={true}
+
                                                                                    name='r15'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    value={this.props.r14}
-                                                                                   disabled={true}
+
                                                                                    name='r14'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    value={this.props.r13}
-                                                                                   disabled={true}
+
                                                                                    name='r13'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    value={this.props.r12}
-                                                                                   disabled={true}
+
                                                                                    name='r12'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    value={this.props.r11}
-                                                                                   disabled={true}
+
                                                                                    name='r11'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    value={this.props.r10}
-                                                                                   disabled={true}
+
                                                                                    name='r10'/></div>
                                             </Col>
                                         </Row>
@@ -305,37 +305,37 @@ class showData extends Component {
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
-                                                                                   disabled={true}
+
                                                                                    value={this.props.d15}
                                                                                    name='d15'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
-                                                                                   disabled={true}
+
                                                                                    value={this.props.d14}
                                                                                    name='d14'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
-                                                                                   disabled={true}
+
                                                                                    value={this.props.d13}
                                                                                    name='d13'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
-                                                                                   disabled={true}
+
                                                                                    value={this.props.d12}
                                                                                    name='d12'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
-                                                                                   disabled={true}
+
                                                                                    value={this.props.d11}
                                                                                    name='d11'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
-                                                                                   disabled={true}
+
                                                                                    value={this.props.d10}
                                                                                    name='d10'/></div>
                                             </Col>
@@ -346,37 +346,37 @@ class showData extends Component {
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
-                                                                                   disabled={true}
+
                                                                                    value={this.props.r35_15}
                                                                                    name='r35_15'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
-                                                                                   disabled={true}
+
                                                                                    value={this.props.r34_14}
                                                                                    name='r34_14'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
-                                                                                   disabled={true}
+
                                                                                    value={this.props.r33_13}
                                                                                    name='r33_13'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
-                                                                                   disabled={true}
+
                                                                                    value={this.props.r32_12}
                                                                                    name='r32_12'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
-                                                                                   disabled={true}
+
                                                                                    value={this.props.r31_11}
                                                                                    name='r31_11'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
-                                                                                   disabled={true}
+
                                                                                    value={this.props.r30_10}
                                                                                    name='r30_10'/></div>
                                             </Col>
@@ -387,37 +387,37 @@ class showData extends Component {
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
-                                                                                   disabled={true}
+
                                                                                    value={this.props.value35_15}
                                                                                    name='value35_15'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
-                                                                                   disabled={true}
+
                                                                                    value={this.props.value34_14}
                                                                                    name='value34_14'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
-                                                                                   disabled={true}
+
                                                                                    value={this.props.value33_13}
                                                                                    name='value33_13'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
-                                                                                   disabled={true}
+
                                                                                    value={this.props.value32_12}
                                                                                    name='value32_12'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
-                                                                                   disabled={true}
+
                                                                                    value={this.props.value31_11}
                                                                                    name='value31_11'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
-                                                                                   disabled={true}
+
                                                                                    value={this.props.value30_10}
                                                                                    name='value30_10'/></div>
                                             </Col>
@@ -429,7 +429,7 @@ class showData extends Component {
                                             <Col span={18}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    style={{textAlign: 'center'}}
-                                                                                   disabled={true}
+
                                                                                    value={this.props.anwser}
                                                                                    name='anwser'/></div>
                                             </Col>
@@ -439,13 +439,13 @@ class showData extends Component {
                                         <hr/>
                                         <br/>
                                         <Row gutter={24}>
-                                            <Col span={6}><strong>仪器允差（读数显微镜）</strong><br/><Input value={this.props.Instrumenttolerance} disabled={true}/></Col>
+                                            <Col span={6}><strong>仪器允差（读数显微镜）</strong><br/><Input value={this.props.Instrumenttolerance} /></Col>
                                             {/*
                                             TODO 等程佩会算了再填
                                             */}
-                                            <Col span={6}><strong>半波损失</strong><br/><Input disabled={true} value='程佩还没算出来'/></Col>
-                                            <Col span={6}><strong>钠光波长</strong><br/><Input disabled={true} value={this.props.lamda}/></Col>
-                                            <Col span={6}><strong>波长不确定度</strong><br/><Input disabled={true} value={this.props.uncertainty}/></Col>
+                                            <Col span={6}><strong>半波损失</strong><br/><Input  value='程佩还没算出来'/></Col>
+                                            <Col span={6}><strong>钠光波长</strong><br/><Input  value={this.props.lamda}/></Col>
+                                            <Col span={6}><strong>波长不确定度</strong><br/><Input  value={this.props.uncertainty}/></Col>
                                         </Row>
                                         <br/>
                                         <Button onClick={()=>this.props.handleButtonUpload(this.props)} type="primary" size='large'>上传</Button>

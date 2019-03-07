@@ -5,6 +5,7 @@ import loginReducer from '../pages/login/store';
 import {reducer as micheison} from '../pages/detail/physicalExperiment/michelson-interferometer/store';
 import {reducer as newtonRing} from '../pages/detail/physicalExperiment/newton-ring/store';
 import {reducer as yangStatic} from '../pages/detail/physicalExperiment/staticYoungmodulus/store';
+import {reducer as Spectrometer} from '../pages/detail/physicalExperiment/spectrometer/store';
 
 
 export default combineReducers({
@@ -13,5 +14,6 @@ export default combineReducers({
     login:loginReducer,
     newtonRing:newtonRing,
     micheison:micheison,
-    yangStatic:yangStatic
+    yangStatic:yangStatic,
+    Spectrometer:Spectrometer
 });

@@ -6,11 +6,8 @@ import {
     SearchInfoSwitch,
     HeaderWrapper,
     Logo,
-    Nav,
     NavItem,
     NavSearch,
-    Addition,
-    Button,
     SearchWrapper,
     SearchInfo,
     Style
@@ -19,6 +16,7 @@ import {CSSTransition} from 'react-transition-group';//动画效果只需要包�
 import {connect} from 'react-redux';
 import {actionCreators} from './store';
 import {Link} from 'react-router-dom';
+import { Row, Col} from "antd";
 
 
 class Header extends Component {
@@ -64,7 +62,75 @@ class Header extends Component {
         return (
             <HeaderWrapper>
                 <Style>
-                        <Link to={'/'}>
+                    <Row>
+
+                        <Col xs={1} lg={1} xl={1}>
+                        </Col>
+                        <Col xs={0} lg={0} xl={5}>
+                            <div style={{height:'50px'}}>
+                                <Link to={'/'} className="aLink navigation-link">
+                                    <Logo/>
+                                </Link>
+                            </div>
+
+                        </Col>
+                        <Col xs={4} lg={3} xl={2}>
+                                <NavItem className={'left active'}>
+                                    <Link to={'/'} className="aLink navigation-link">
+                                        首页
+                                    </Link>
+                                </NavItem>
+                        </Col>
+                        <Col xs={4} lg={3} xl={2}>
+                            <NavItem className={'left'}>
+                                <Link to={'/about'} className="aLink navigation-link">
+                                    关于
+                                </Link>
+                            </NavItem>
+                        </Col>
+                        <Col xs={4} lg={3} xl={2}>
+                            <NavItem className={'left'}>
+                                <Link to={'/callUs'} className="aLink navigation-link">
+                                    联系我们
+                                </Link>
+                            </NavItem>
+                        </Col>
+                        <Col xs={1} lg={1}></Col>
+                        <Col xs={0} lg={4} xl={5}>
+                            <SearchWrapper>
+                                <CSSTransition
+                                    //控制入场和出场动画
+                                    in={focused}
+                                    timeout={200}
+                                    classNames='slide'
+                                >
+                                    <NavSearch
+                                        className={focused ? 'focused' : ''}
+                                        onFocus={() => hindleInputFocus(list)}
+                                        onBlur={hindleInputBlur}
+                                    >
+                                    </NavSearch>
+                                </CSSTransition>
+                                <span className={focused ? 'focused iconfont zoom' : 'iconfont zoom'}>&#xe60b;</span>
+                                {this.getListArea()}
+                            </SearchWrapper>
+                        </Col>
+                        <Col xs={6} lg={6} xl={5}>
+
+                        </Col>
+                        <Col xs={4} lg={3} xl={2}>
+                            <NavItem className={'left'}>
+                                <Link to={'/'} className="aLink navigation-link">
+                                    登录
+                                </Link>
+                            </NavItem>
+                        </Col>
+
+
+
+
+                    </Row>
+                       {/* <Link to={'/'}>
                             <Logo/>
                         </Link>
                         <Nav>
@@ -89,13 +155,6 @@ class Header extends Component {
                                 </Link>
                             </NavItem>
                             <NavItem className={'right'}>
-{/*
-                                <span className="iconfont">
-                                    <a href="#" className="navigation-link">
-                                    &#xe6e9;
-                                </a>
-                                </span>
-*/}
                                 <Link to={'/'} className="aLink navigation-link">
                                     注册
                                 </Link>
@@ -123,8 +182,7 @@ class Header extends Component {
                             <Button className={'writting'}>
                                 <span className="iconfont">&#xe612;</span>
                                 欢迎使用</Button>
-                            {/*<Button className={'reg'}>注册</Button>*/}
-                        </Addition>
+                        </Addition>*/}
 
 
                 </Style>

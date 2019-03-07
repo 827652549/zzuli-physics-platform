@@ -20,7 +20,7 @@ class MichelsonInterferometer extends Component {
 
 
     render() {
-        const { handleChangeInput, l10, l11, l12, l13, l14, l15, l30, l31, l32, l33, l34, l35, r10, r11, r12, r13, r14, r15, r30, r31, r32, r33, r34, r35,uncertainty,Instrumenttolerance,lamda,anwser} = this.props;
+        const { handleChangeInput} = this.props;
         return (
             <Fragment>
                 <Style>
