@@ -10,10 +10,14 @@ import NewtonRing from './pages/detail/physicalExperiment/newton-ring';
 import NewtonRingShowData from './pages/detail/physicalExperiment/newton-ring/showData';
 import MichelsonInterferometer from './pages/detail/physicalExperiment/michelson-interferometer';
 import MichelsonInterferometerShowData from './pages/detail/physicalExperiment/michelson-interferometer/showData';
+import diffractiongrating from './pages/detail/physicalExperiment/diffractiongrating';
+import diffractiongratingShowData from './pages/detail/physicalExperiment/diffractiongrating/showData';
 import Staticyoungmodulus from './pages/detail/physicalExperiment/staticYoungmodulus';
 import StaticyoungmodulusShowData from './pages/detail/physicalExperiment/staticYoungmodulus/showData';
 import Spectrometer from './pages/detail/physicalExperiment/spectrometer';
 import SpectrometerShowData from './pages/detail/physicalExperiment/spectrometer/showData';
+import thermalconductivity from './pages/detail/physicalExperiment/thermalconductivity';
+import thermalconductivityShowData from './pages/detail/physicalExperiment/thermalconductivity/showData';
 import listWay from './pages/detail/dataHandle/listWay';
 import drawPicture from "./pages/detail/dataHandle/drawPicture";
 import zhuChaWay from "./pages/detail/dataHandle/zhuChaWay";
@@ -58,6 +62,16 @@ class App extends Component {
                             <Route path='/physicalExperiment/3' exact component={Spectrometer}></Route>
                             {/*分光计二级页面*/}
                             <Route path='/physicalExperiment/3/showData' exact component={SpectrometerShowData}></Route>
+
+                            {/*衍射光栅一级页面*/}
+                            <Route path='/physicalExperiment/4' exact component={diffractiongrating}></Route>
+                            {/*衍射光栅二级页面*/}
+                            <Route path='/physicalExperiment/4/showData' exact component={diffractiongratingShowData}></Route>
+
+                            {/*热导率一级页面*/}
+                            <Route path='/physicalExperiment/5' exact component={thermalconductivity}></Route>
+                            {/*热导率二级页面*/}
+                            <Route path='/physicalExperiment/5/showData' exact component={thermalconductivityShowData}></Route>
 
                             {/*列表法*/}
                             <Route path='/dataHandle/0' exact component={listWay}></Route>

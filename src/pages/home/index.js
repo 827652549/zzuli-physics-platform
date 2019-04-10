@@ -13,11 +13,17 @@ const data1 = [
     '作图法',
     '逐差法',
     '回归法',
-    '最小二乘法'
+    '最小二乘法',
+    '误差分析法'
 ];
 
 const data2 = [
-
+    '逐差工具组',
+    '标准差工具',
+    '方差工具',
+    '进制转换工具',
+    '光学相关查询工具',
+    '误差分析'
 ];
 
 const data3 = [
@@ -25,9 +31,18 @@ const data3 = [
     '迈克尔逊干涉仪',
     '杨氏静态模量实验',
     '分光计的调整和使用',
+    '衍射光栅实验',
+    '热导率的测量'
 
 ];
-const data4 = [];
+const data4 = [
+    '塞曼效应',
+    '光电效应法测定普朗克常量',
+    '光强分布的测量',
+    '电位差计的使用',
+    '液体黏性系数的测量',
+    '铁磁材料磁滞回线的测绘'
+];
 
 
 class Home extends Component {
@@ -54,7 +69,7 @@ class Home extends Component {
                                     </Carousel>
                                     <hr/>
                                     <Row>
-                                        <Col xs={24} xl={6}>
+                                        <Col xs={24} sm={12} xl={6}>
                                             <List
                                                 className='list'
                                                 header={<h2>数据处理方法</h2>}
@@ -63,7 +78,7 @@ class Home extends Component {
                                                 renderItem={(item,index) => (<List.Item className='list'><Link  id='link' to={'/dataHandle/'+index}><span>{item}</span></Link></List.Item>)}
                                             />
                                         </Col>
-                                        <Col xs={24} xl={6}>
+                                        <Col xs={24} sm={12} xl={6}>
                                             <List
                                                 className='list'
                                                 header={<h2>通用工具</h2>}
@@ -72,7 +87,7 @@ class Home extends Component {
                                                 renderItem={item => (<List.Item className='list'><Link  id='link' to={'/detail/1'}><span>{item}</span></Link></List.Item>)}
                                             />
                                         </Col>
-                                        <Col xs={24} xl={6}>
+                                        <Col xs={24} sm={12} xl={6}>
                                             <List
                                                 className='list'
                                                 header={<h2>实验项目A</h2>}
@@ -83,7 +98,7 @@ class Home extends Component {
                                                 </List.Item>)}
                                             />
                                         </Col>
-                                        <Col xs={24} xl={6}>
+                                        <Col xs={24} sm={12} xl={6}>
                                             <List
                                                 className='list'
                                                 header={<h2>实验项目B</h2>}

@@ -6,7 +6,8 @@ import {reducer as micheison} from '../pages/detail/physicalExperiment/michelson
 import {reducer as newtonRing} from '../pages/detail/physicalExperiment/newton-ring/store';
 import {reducer as yangStatic} from '../pages/detail/physicalExperiment/staticYoungmodulus/store';
 import {reducer as Spectrometer} from '../pages/detail/physicalExperiment/spectrometer/store';
-
+import {reducer as diffractiongrating} from '../pages/detail/physicalExperiment/diffractiongrating/store';
+import {reducer as thermalconductivity} from '../pages/detail/physicalExperiment/thermalconductivity/store';
 
 export default combineReducers({
     header:headerReducer,
@@ -15,5 +16,8 @@ export default combineReducers({
     newtonRing:newtonRing,
     micheison:micheison,
     yangStatic:yangStatic,
-    Spectrometer:Spectrometer
+    Spectrometer:Spectrometer,
+    diffractiongrating:diffractiongrating,
+    thermalconductivity:thermalconductivity
+
 });

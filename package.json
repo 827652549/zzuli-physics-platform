@@ -42,5 +42,5 @@
     "react-app-rewired": "^2.1.0",
     "redux-devtools-extension": "^2.13.8"
   },
-  "proxy": "http://10.85.15.24:8000"
+  "proxy": "http://localhost:8000"
 }
