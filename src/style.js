@@ -16,6 +16,7 @@ export const GlobalSytle =createGlobalStyle`
       figure, figcaption, footer, header, hgroup, 
       menu, nav, output, ruby, section, summary,
       time, mark, audio, video {
+      font-variant: normal;
           margin: 0;
           padding: 0;
           border: 0;
@@ -46,5 +47,6 @@ export const GlobalSytle =createGlobalStyle`
           border-collapse: collapse;
           border-spacing: 0;
       }
+     
       
 `;

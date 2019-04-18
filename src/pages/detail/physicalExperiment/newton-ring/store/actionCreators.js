@@ -26,7 +26,7 @@ export const sendData = (data) => {
     return (dispatch) => {
         axios({
             method:'post',
-            url:'/newrtown/only_query/',
+            url:'newrtown/only_query/',
             data: {
                 "user_id": data.user_id,
                 "user_name": data.user_name,
@@ -105,7 +105,7 @@ export const sendDataToBackend = (data) => {
     return (dispatch) => {
         axios({
             method:'post',
-            url:'/newrtown/',
+            url:'newrtown/',
             data: {
                 "user_id": data.user_id,
                 "user_name": data.user_name,

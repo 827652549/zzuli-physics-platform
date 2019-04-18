@@ -4,8 +4,9 @@ const defaultState =fromJS({
     "user_id": 0,
     "user_name": "string",
     "user_num": "string",
-    "add_Ta": [ 1, 2,3,4, 5, 6,7,8, 9,10],
-    "add_Tp": [ 1, 2,3,4, 5, 6,7,8, 9,10],
+    add_Ta: [ 1, 2,3,4, 5, 6,7,8, 9,10,1, 2,3,4, 5, 6,7,8, 9,10],
+    "add_Tp": [ 1, 2,3,4, 5, 6,7,8, 9,10,1, 2,3,4, 5, 6,7,8, 9,10],
+    uu_id:"",
     "Tp_1": 70,
     "Tp_2": 68.2,
     "Tp_3": 66.6,
@@ -65,6 +66,7 @@ export default (state=defaultState,action)=> {
                 user_num:data.get('user_num'),
                 add_Ta:data.get('add_Ta'),
                 add_Tp:data.get('add_Tp'),
+                uu_id:data.get('uu_id'),
                 Tp_1:data.get('Tp_1'),
                 Tp_2:data.get('Tp_2'),
                 Tp_3:data.get('Tp_3'),
@@ -116,6 +118,8 @@ export default (state=defaultState,action)=> {
             //改变每个input的store数据
         case constants.CHANGE_INPUT_VALUE:
             return state.set(action.name,action.value);
+        case constants.CHANGE_DATAS_FOREVER_ARRAYS:
+            return state.setIn([action.nameArr,action.index],action.value);
         default:
             return state;
     }

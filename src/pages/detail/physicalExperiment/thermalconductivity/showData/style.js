@@ -6,6 +6,7 @@ export const Style =styled.span`
         text-align: center;
         font-weight:bold;
         font-size:16px;
+        font-variant: normal;
         padding:1px 3px;
         background-color:#eeeeee;
         height:40px;
@@ -16,6 +17,7 @@ export const Style =styled.span`
         text-align: center;
         font-weight:bold;
         font-size:16px;
+        font-variant: normal;
         height:40px;
         line-height:40px;
         box-sizing: border-box;
@@ -25,6 +27,7 @@ export const Style =styled.span`
         height:39px;
         box-sizing: border-box;
         border-radius:0;
+        font-variant: normal;
 
     }
    

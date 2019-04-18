@@ -8,6 +8,13 @@ export const changeInputValue = (name,value) => ({
     value:parseFloat(value)
 
 });
+export const changeInputValueArrays = (nameArr,index,value) => ({
+    type: constants.CHANGE_DATAS_FOREVER_ARRAYS,
+    nameArr,
+    value:parseInt(value),
+    index:parseFloat(index)
+
+});
 /**
  * 不保存数据
  * @param data
@@ -26,13 +33,14 @@ export const sendData = (data) => {
     return (dispatch) => {
         axios({
             method:'post',
-            url:'/thermalconductivity/only_query/',
+            url:'/api/thermalconductivity/only_query/',
             data: {
                 user_id: data.user_id,
                 user_name: data.user_name,
                 user_num: data.user_num,
                 add_Ta: data.add_Ta,
                 add_Tp: data.add_Tp,
+                uu_id:data.uu_id,
                 Tp_1: data.Tp_1,
                 Tp_2: data.Tp_2,
                 Tp_3: data.Tp_3,
@@ -81,6 +89,7 @@ export const sendData = (data) => {
         })
             .then((res) => {
                 console.log('热导率第一次请求成功');
+
                 /*将返回的数据封装陈immutable对象*/
                 const action = changeDatas(res.data);
                 dispatch(action);
@@ -98,13 +107,14 @@ export const sendDataToBackend = (data) => {
     return (dispatch) => {
         axios({
             method:'post',
-            url:'/thermalconductivity/',
+            url:'/api/thermalconductivity/',
             data: {
                 user_id: data.user_id,
                 user_name: data.user_name,
                 user_num: data.user_num,
                 add_Ta: data.add_Ta,
                 add_Tp: data.add_Tp,
+                uu_id: data.uu_id,
                 Tp_1: data.Tp_1,
                 Tp_2: data.Tp_2,
                 Tp_3: data.Tp_3,
@@ -157,6 +167,8 @@ export const sendDataToBackend = (data) => {
         })
             .then((res) => {
                 alert("上传成功")
+                const action = changeDatas(res.data);
+                dispatch(action);
                 console.log('热导率第二次上传成功');
             }).catch(() => {
                 console.log('上传失败');

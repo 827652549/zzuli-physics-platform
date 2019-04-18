@@ -60,6 +60,9 @@ export const SearchWrapper=styled.div`
             color:#fff;
         }
      }
+     .zoom:hover{
+        cursor:pointer;
+     }
     
 `;
 
@@ -128,6 +131,7 @@ export const SearchInfo=styled.div`
     padding:0 20px;
     box-shadow: 0 0 8px rgba(0,0,0,.2);
     background-color:#fff;
+    z-index:100;
 `;
 
 export const SearchInfoTitle=styled.div`

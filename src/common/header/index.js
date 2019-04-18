@@ -77,6 +77,7 @@ class Header extends Component {
                         <Col xs={4} lg={3} xl={2}>
                                 <NavItem className={'left active'}>
                                     <Link to={'/'} className="aLink navigation-link">
+                                        <span className="iconfont">&#xe61a;&nbsp;</span>
                                         首页
                                     </Link>
                                 </NavItem>
@@ -84,6 +85,7 @@ class Header extends Component {
                         <Col xs={4} lg={3} xl={2}>
                             <NavItem className={'left'}>
                                 <Link to={'/about'} className="aLink navigation-link">
+                                    <span className="iconfont">&#xe6a1;&nbsp;</span>
                                     关于
                                 </Link>
                             </NavItem>
@@ -91,11 +93,12 @@ class Header extends Component {
                         <Col xs={4} lg={3} xl={2}>
                             <NavItem className={'left'}>
                                 <Link to={'/callUs'} className="aLink navigation-link">
+                                    <span className="iconfont">&#xe60e;&nbsp;</span>
                                     联系我们
                                 </Link>
                             </NavItem>
                         </Col>
-                        <Col xs={1} lg={1}></Col>
+                        <Col xs={1} lg={1} xl={1}></Col>
                         <Col xs={0} lg={4} xl={5}>
                             <SearchWrapper>
                                 <CSSTransition
@@ -114,6 +117,7 @@ class Header extends Component {
                                 <span className={focused ? 'focused iconfont zoom' : 'iconfont zoom'}>&#xe60b;</span>
                                 {this.getListArea()}
                             </SearchWrapper>
+
                         </Col>
                         <Col xs={6} lg={6} xl={5}>
 
@@ -121,6 +125,7 @@ class Header extends Component {
                         <Col xs={4} lg={3} xl={2}>
                             <NavItem className={'left'}>
                                 <Link to={'/'} className="aLink navigation-link">
+                                    <span className="iconfont">&#xe6f0;&nbsp;</span>
                                     登录
                                 </Link>
                             </NavItem>
@@ -130,59 +135,6 @@ class Header extends Component {
 
 
                     </Row>
-                       {/* <Link to={'/'}>
-                            <Logo/>
-                        </Link>
-                        <Nav>
-                            <NavItem className={'left active'}>
-                                <Link to={'/'} className="aLink navigation-link">
-                                首页
-                                </Link>
-                            </NavItem>
-                            <NavItem className={'left'}>
-                                <Link to={'/about'} className="aLink navigation-link">
-                                    关于
-                                </Link>
-                                </NavItem>
-                            <NavItem className={'left'}>
-                                <Link to={'/callUs'} className="aLink navigation-link">
-                                    联系我们
-                                </Link>
-                                </NavItem>
-                            <NavItem className={'right'}>
-                                <Link to={'/'} className="aLink navigation-link">
-                                    登录
-                                </Link>
-                            </NavItem>
-                            <NavItem className={'right'}>
-                                <Link to={'/'} className="aLink navigation-link">
-                                    注册
-                                </Link>
-                            </NavItem>
-                            <SearchWrapper>
-                                <CSSTransition
-                                    //控制入场和出场动画
-                                    in={focused}
-                                    timeout={200}
-                                    classNames='slide'
-                                >
-                                    <NavSearch
-                                        className={focused ? 'focused' : ''}
-                                        onFocus={() => hindleInputFocus(list)}
-                                        onBlur={hindleInputBlur}
-                                    >
-                                    </NavSearch>
-                                </CSSTransition>
-                                <span className={focused ? 'focused iconfont zoom' : 'iconfont zoom'}>&#xe60b;</span>
-                                {this.getListArea()}
-                            </SearchWrapper>
-
-                        </Nav>
-                        <Addition>
-                            <Button className={'writting'}>
-                                <span className="iconfont">&#xe612;</span>
-                                欢迎使用</Button>
-                        </Addition>*/}
 
 
                 </Style>
@@ -208,7 +160,7 @@ const mapDispatchToProps = (dispatch) => {
     return {
         hindleInputFocus(list) {
             if (list.size === 0)
-                dispatch(actionCreators.getList());
+            dispatch(actionCreators.getList());
             dispatch(actionCreators.searchFocus());
         },
         hindleInputBlur() {

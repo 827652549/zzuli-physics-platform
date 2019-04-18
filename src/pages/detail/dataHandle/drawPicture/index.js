@@ -7,6 +7,13 @@ const {
 } = Layout;
 
 class drawPicture extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            //利用state改变组件就会重新渲染的特性
+            clientHeight:5
+        }
+    }
     render() {
         return (
             <Fragment>
@@ -24,7 +31,7 @@ class drawPicture extends Component {
                                         </Breadcrumb.Item>
                                         <Breadcrumb.Item>作图法</Breadcrumb.Item>
                                     </Breadcrumb>
-                                    <div style={{background: '#fff', padding: 24, minHeight: 280}}>
+                                    <div style={{background: '#fff', padding: 24, minHeight: this.state.clientHeight}}>
 
                                         <h1>作图法</h1>
                                         <hr/>
@@ -73,6 +80,21 @@ class drawPicture extends Component {
             </Fragment>
 
         )
+    }
+    componentDidMount(){
+        {this.handleHeight()}
+        window.addEventListener('resize',this.handleHeight);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize',this.handleHeight);
+    }
+
+    handleHeight=()=>{
+        const clientHeight = document.documentElement.clientHeight-184;
+        this.setState({
+            clientHeight
+        });
     }
 
 

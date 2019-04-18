@@ -62,7 +62,7 @@ class Home extends Component {
                                 </Breadcrumb>
                                 <div style={{background: '#fff', padding: 24, minHeight: 280}}>
                                     <Carousel autoplay>
-                                        <div><h1>认识来自实践，科学进步依赖于科学实验中的重大发现，物理实验就是人类追寻科学的印迹。</h1></div>
+                                        <div style={{lineHeight:'280px',minHeight:'280px'}}><h1>认识来自实践，科学进步依赖于科学实验中的重大发现，物理实验就是人类追寻科学的印迹。</h1></div>
                                         <div><h1>人们在一次一次的科学试验中不断总结方法，提炼原理，又用已知原理去指导实验方法，为了简便快捷又发明了各种测量工具和仪器。</h1></div>
                                         <div><h1>在大学物理实验中，我们重复经典实验，从中学习前人智慧，体验发现过程，进行基本的实验训练，提高自己的科学实验技能和素养。</h1></div>
                                         <div><h1>使用良好的数据处理方法，更易于从纷繁复杂的实验现象和数据中发现简单的规律。</h1></div>
@@ -84,7 +84,7 @@ class Home extends Component {
                                                 header={<h2>通用工具</h2>}
                                                 bordered
                                                 dataSource={data2}
-                                                renderItem={item => (<List.Item className='list'><Link  id='link' to={'/detail/1'}><span>{item}</span></Link></List.Item>)}
+                                                renderItem={(item,index)=> (<List.Item className='list'><Link  id='link' to={'/generalTools/'+index}><span>{item}</span></Link></List.Item>)}
                                             />
                                         </Col>
                                         <Col xs={24} sm={12} xl={6}>

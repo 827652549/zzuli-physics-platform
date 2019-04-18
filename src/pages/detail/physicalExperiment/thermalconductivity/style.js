@@ -31,6 +31,10 @@ export const Style =styled.span`
         color:#d4d4d3;
         font-size:16px;
     }
+    .playVideo:hover{
+        cursor:pointer;
+        color:#124aff;
+    }
     
 
 `;

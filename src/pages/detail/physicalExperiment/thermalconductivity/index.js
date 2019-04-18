@@ -1,7 +1,7 @@
 import React, {Component, Fragment} from 'react';
 import {withRouter, Link,} from 'react-router-dom';
 import {Style} from './style';
-import {Layout, Row, Col, Breadcrumb, BackTop, Input, Button} from 'antd';
+import {Layout, Row, Col, Breadcrumb, BackTop, Input, Button, Drawer} from 'antd';
 import {connect} from "react-redux";
 import {actionCreators} from "./store";
 
@@ -14,13 +14,29 @@ class thermalconductivity extends Component {
         super(props);
         this.state = {
             //利用state改变组件就会重新渲染的特性
-            updateUI: 0
+            updateUI: 0,
+            visible: false,
+            visibleDrawer: false,
+            clientHeight:5
+
         }
     }
 
+    showDrawer = () => {
+        this.setState({
+            visibleDrawer: true,
+        });
+    };
+
+    onClose = () => {
+        this.setState({
+            visibleDrawer: false,
+        });
+    };
+
 
     render() {
-        const { handleChangeInput, l10, l11, l12, l13, l14, l15, l30, l31, l32, l33, l34, l35, r10, r11, r12, r13, r14, r15, r30, r31, r32, r33, r34, r35,uncertainty,Instrumenttolerance,lamda,anwser} = this.props;
+        const {handleChangeInput} = this.props;
         return (
             <Fragment>
                 <Style>
@@ -31,15 +47,20 @@ class thermalconductivity extends Component {
                                     <Breadcrumb style={{margin: '16px 0'}}>
                                         <Breadcrumb.Item>
                                             <Link to='/'>
-                                                <span className="iconfont" style={{fontSize: '18px'}}>&#xe600;&ensp;</span>
+                                                <span className="iconfont"
+                                                      style={{fontSize: '18px'}}>&#xe600;&ensp;</span>
                                                 首页
+
                                             </Link>
                                         </Breadcrumb.Item>
-                                        <Breadcrumb.Item>                                            <Link to='/physicalExperiment/5'>
-                                            热导率实验</Link></Breadcrumb.Item>
+                                        <Breadcrumb.Item> <Link to='/physicalExperiment/5'>
+                                            热导率实验</Link>
+                                        </Breadcrumb.Item>
                                     </Breadcrumb>
-                                    <div style={{background: '#fff', padding: 24, minHeight: 280}}>
-                                        <h3>加热盘Ta和散热盘Tp的温度（稳态法）</h3>
+                                    <div style={{background: '#fff', padding: 24, minHeight: this.state.clientHeight}}>
+                                        <h3>加热盘Ta和散热盘Tp的温度（稳态法）
+                                            <span onClick={this.showDrawer} className="iconfont playVideo"
+                                                  style={{float: 'right'}}>&#xe643;&ensp;播放视频</span></h3>
                                         <hr/>
                                         <br/>
                                         <span className='tipSpan'>请录入您实验的数据</span>
@@ -85,54 +106,64 @@ class thermalconductivity extends Component {
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Ta' data-type='arrays'
+                                                                                   data-index='0'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Ta' data-type='arrays'
+                                                                                   data-index='1'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Ta' data-type='arrays'
+                                                                                   data-index='2'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Ta' data-type='arrays'
+                                                                                   data-index='3'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Ta' data-type='arrays'
+                                                                                   data-index='4'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Ta' data-type='arrays'
+                                                                                   data-index='5'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Ta' data-type='arrays'
+                                                                                   data-index='6'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
-                                            </Col>
-                                            <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput'
-                                                                                   onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
-                                            </Col>
-                                            <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput'
-                                                                                   onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Ta' data-type='arrays'
+                                                                                   data-index='7'/></div>
                                             </Col>
 
+                                            <Col span={2}>
+                                                <div className='divTableTd'><Input className='divInput'
+                                                                                   onChange={e => handleChangeInput(e)}
+                                                                                   name='add_Ta' data-type='arrays'
+                                                                                   data-index='8'/></div>
+                                            </Col>
+                                            <Col span={2}>
+                                                <div className='divTableTd'><Input className='divInput'
+                                                                                   onChange={e => handleChangeInput(e)}
+                                                                                   name='add_Ta' data-type='arrays'
+                                                                                   data-index='9'/></div>
+                                            </Col>
                                         </Row>
                                         <Row>
                                             <Col span={4}>
@@ -141,54 +172,64 @@ class thermalconductivity extends Component {
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Tp' data-type='arrays'
+                                                                                   data-index='0'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Tp' data-type='arrays'
+                                                                                   data-index='1'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Tp' data-type='arrays'
+                                                                                   data-index='2'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Tp' data-type='arrays'
+                                                                                   data-index='3'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Tp' data-type='arrays'
+                                                                                   data-index='4'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Tp' data-type='arrays'
+                                                                                   data-index='5'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Tp' data-type='arrays'
+                                                                                   data-index='6'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
-                                            </Col>
-                                            <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput'
-                                                                                   onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
-                                            </Col>
-                                            <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput'
-                                                                                   onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Tp' data-type='arrays'
+                                                                                   data-index='7'/></div>
                                             </Col>
 
+                                            <Col span={2}>
+                                                <div className='divTableTd'><Input className='divInput'
+                                                                                   onChange={e => handleChangeInput(e)}
+                                                                                   name='add_Tp' data-type='arrays'
+                                                                                   data-index='8'/></div>
+                                            </Col>
+                                            <Col span={2}>
+                                                <div className='divTableTd'><Input className='divInput'
+                                                                                   onChange={e => handleChangeInput(e)}
+                                                                                   name='add_Tp' data-type='arrays'
+                                                                                   data-index='9'/></div>
+                                            </Col>
                                         </Row>
                                         <Row>
                                             <Col span={4}>
@@ -232,54 +273,64 @@ class thermalconductivity extends Component {
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Ta' data-type='arrays'
+                                                                                   data-index='10'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Ta' data-type='arrays'
+                                                                                   data-index='11'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Ta' data-type='arrays'
+                                                                                   data-index='12'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Ta' data-type='arrays'
+                                                                                   data-index='13'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Ta' data-type='arrays'
+                                                                                   data-index='14'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Ta' data-type='arrays'
+                                                                                   data-index='15'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Ta' data-type='arrays'
+                                                                                   data-index='16'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
-                                            </Col>
-                                            <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput'
-                                                                                   onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
-                                            </Col>
-                                            <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput'
-                                                                                   onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Ta' data-type='arrays'
+                                                                                   data-index='17'/></div>
                                             </Col>
 
+                                            <Col span={2}>
+                                                <div className='divTableTd'><Input className='divInput'
+                                                                                   onChange={e => handleChangeInput(e)}
+                                                                                   name='add_Ta' data-type='arrays'
+                                                                                   data-index='18'/></div>
+                                            </Col>
+                                            <Col span={2}>
+                                                <div className='divTableTd'><Input className='divInput'
+                                                                                   onChange={e => handleChangeInput(e)}
+                                                                                   name='add_Ta' data-type='arrays'
+                                                                                   data-index='19'/></div>
+                                            </Col>
                                         </Row>
                                         <Row>
                                             <Col span={4}>
@@ -288,62 +339,73 @@ class thermalconductivity extends Component {
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Tp' data-type='arrays'
+                                                                                   data-index='10'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Tp' data-type='arrays'
+                                                                                   data-index='11'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Tp' data-type='arrays'
+                                                                                   data-index='12'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Tp' data-type='arrays'
+                                                                                   data-index='13'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Tp' data-type='arrays'
+                                                                                   data-index='14'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Tp' data-type='arrays'
+                                                                                   data-index='15'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Tp' data-type='arrays'
+                                                                                   data-index='16'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
-                                            </Col>
-                                            <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput'
-                                                                                   onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
-                                            </Col>
-                                            <Col span={2}>
-                                                <div className='divTableTd'><Input className='divInput'
-                                                                                   onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='add_Tp' data-type='arrays'
+                                                                                   data-index='17'/></div>
                                             </Col>
 
+                                            <Col span={2}>
+                                                <div className='divTableTd'><Input className='divInput'
+                                                                                   onChange={e => handleChangeInput(e)}
+                                                                                   name='add_Tp' data-type='arrays'
+                                                                                   data-index='18'/></div>
+                                            </Col>
+                                            <Col span={2}>
+                                                <div className='divTableTd'><Input className='divInput'
+                                                                                   onChange={e => handleChangeInput(e)}
+                                                                                   name='add_Tp' data-type='arrays'
+                                                                                   data-index='19'/></div>
+                                            </Col>
                                         </Row>
                                         <br/>
                                         <Row gutter={24}>
-                                            <Col span={6}><strong>散热盘初始温度</strong><br/><Input onChange={e => handleChangeInput(e)}
-                                                                                                  name='Instrumenttolerance'/></Col>
-                                            <Col span={6}><strong>加热盘初始温度</strong><br/><Input value=''/></Col>
-                                            <Col span={6}><strong>加热时间间隔</strong><br/><Input onChange={e => handleChangeInput(e)}
-                                                                                           name='lamda'/></Col>
+                                            <Col span={6}><strong>散热盘初始温度</strong><br/><Input
+                                                onChange={e => handleChangeInput(e)}
+                                                name='Ta'/></Col>
+                                            <Col span={6}><strong>加热时间间隔</strong><br/><Input
+                                                onChange={e => handleChangeInput(e)}
+                                                name='space1'/></Col>
                                         </Row>
 
 
@@ -394,52 +456,52 @@ class thermalconductivity extends Component {
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='Tp_1'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='Tp_2'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='Tp_3'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='Tp_4'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='Tp_5'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='Tp_6'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='Tp_7'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='Tp_8'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='Tp_9'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='Tp_10'/></div>
                                             </Col>
 
                                         </Row>
@@ -485,59 +547,60 @@ class thermalconductivity extends Component {
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='Tp_11'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='Tp_12'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='Tp_13'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='Tp_14'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='Tp_15'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='Tp_16'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='Tp_17'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='Tp_18'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='Tp_19'/></div>
                                             </Col>
                                             <Col span={2}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='Tp_20'/></div>
                                             </Col>
 
                                         </Row>
                                         <br/>
                                         <Row gutter={24}>
-                                            <Col span={6}><strong>散热时间间隔</strong><br/><Input onChange={e => handleChangeInput(e)}
-                                                                                           name='lamda'/></Col>
+                                            <Col span={6}><strong>散热时间间隔</strong><br/><Input
+                                                onChange={e => handleChangeInput(e)}
+                                                name='space2'/></Col>
                                         </Row>
 
                                         <br/>
@@ -575,32 +638,32 @@ class thermalconductivity extends Component {
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='D1'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='D2'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='D3'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='D4'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='D5'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='D6'/></div>
                                             </Col>
 
 
@@ -613,79 +676,44 @@ class thermalconductivity extends Component {
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='hb_1'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='hb_2'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='hb_3'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='hb_4'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='hb_5'/></div>
                                             </Col>
                                             <Col span={3}>
                                                 <div className='divTableTd'><Input className='divInput'
                                                                                    onChange={e => handleChangeInput(e)}
-                                                                                   name='l35'/></div>
+                                                                                   name='hb_6'/></div>
                                             </Col>
 
 
                                         </Row>
-                                        <Row>
-                                        <Col span={6}>
-                                            <div className='divTableTh'>面积</div>
-                                        </Col>
-                                        <Col span={3}>
-                                            <div className='divTableTd'><Input className='divInput'
-                                                                               onChange={e => handleChangeInput(e)}
-                                                                               name='l35'/></div>
-                                        </Col>
-                                        <Col span={3}>
-                                            <div className='divTableTd'><Input className='divInput'
-                                                                               onChange={e => handleChangeInput(e)}
-                                                                               name='l35'/></div>
-                                        </Col>
-                                        <Col span={3}>
-                                            <div className='divTableTd'><Input className='divInput'
-                                                                               onChange={e => handleChangeInput(e)}
-                                                                               name='l35'/></div>
-                                        </Col>
-                                        <Col span={3}>
-                                            <div className='divTableTd'><Input className='divInput'
-                                                                               onChange={e => handleChangeInput(e)}
-                                                                               name='l35'/></div>
-                                        </Col>
-                                        <Col span={3}>
-                                            <div className='divTableTd'><Input className='divInput'
-                                                                               onChange={e => handleChangeInput(e)}
-                                                                               name='l35'/></div>
-                                        </Col>
-                                        <Col span={3}>
-                                            <div className='divTableTd'><Input className='divInput'
-                                                                               onChange={e => handleChangeInput(e)}
-                                                                               name='l35'/></div>
-                                        </Col>
-
-
-                                    </Row>
                                         <br/>
                                         <Row gutter={24}>
-                                            <Col span={6}><strong>橡胶盘质量</strong><br/><Input onChange={e => handleChangeInput(e)}
-                                                                                             name='lamda'/></Col>
-                                            <Col span={6}><strong>橡胶盘比热容</strong><br/><Input onChange={e => handleChangeInput(e)}
-                                                                                             name='lamda'/></Col>
+                                            <Col span={6}><strong>橡胶盘质量</strong><br/><Input
+                                                onChange={e => handleChangeInput(e)}
+                                                name='m'/></Col>
+                                            <Col span={6}><strong>橡胶盘比热容</strong><br/><Input
+                                                onChange={e => handleChangeInput(e)}
+                                                name='c'/></Col>
                                         </Row>
                                         <br/>
                                         <Link to={
@@ -693,64 +721,66 @@ class thermalconductivity extends Component {
                                                 /*将数据传递到连接到的页面中*/
                                                 pathname: `${this.props.match.url}/showData`,
                                                 state: {
-                                                    user_id:this.props.user_id,
-                                                    user_name:this.props.user_name,
-                                                    user_num:this.props.user_num,
-                                                    add_Ta:this.props.add_Ta,
-                                                    add_Tp:this.props.add_Tp,
-                                                    Tp_1:this.props.Tp_1,
-                                                    Tp_2:this.props.Tp_2,
-                                                    Tp_3:this.props.Tp_3,
-                                                    Tp_4:this.props.Tp_4,
-                                                    Tp_5:this.props.Tp_5,
-                                                    Tp_6:this.props.Tp_6,
-                                                    Tp_7:this.props.Tp_7,
-                                                    Tp_8:this.props.Tp_8,
-                                                    Tp_9:this.props.Tp_9,
-                                                    Tp_10:this.props.Tp_10,
-                                                    Tp_11:this.props.Tp_11,
-                                                    Tp_12:this.props.Tp_12,
-                                                    Tp_13:this.props.Tp_13,
-                                                    Tp_14:this.props.Tp_14,
-                                                    Tp_15:this.props.Tp_15,
-                                                    Tp_16:this.props.Tp_16,
-                                                    Tp_17:this.props.Tp_17,
-                                                    Tp_18:this.props.Tp_18,
-                                                    Tp_19:this.props.Tp_19,
-                                                    Tp_20:this.props.Tp_20,
-                                                    hb_1:this.props.hb_1,
-                                                    hb_2:this.props.hb_2,
-                                                    hb_3:this.props.hb_3,
-                                                    hb_4:this.props.hb_4,
-                                                    hb_5:this.props.hb_5,
-                                                    hb_6:this.props.hb_6,
-                                                    Ta:this.props.Ta,
-                                                    Tp:this.props.Tp,
-                                                    hp:this.props.hp,
-                                                    D1:this.props.D1,
-                                                    D2:this.props.D2,
-                                                    D3:this.props.D3,
-                                                    D4:this.props.D4,
-                                                    D5:this.props.D5,
-                                                    D6:this.props.D6,
-                                                    m:this.props.m,
-                                                    c:this.props.c,
-                                                    space1:this.props.space1,
-                                                    space2:this.props.space2,
-                                                    p1:this.props.p1,
-                                                    p2:this.props.p2,
-                                                    t:this.props.t,
-                                                    img1:this.props.img1,
-                                                    img2:this.props.img2,
-                                                    img10:this.props.img10,
-                                                    img20:this.props.img20,
-                                                    k:this.props.k
+                                                    user_id: this.props.user_id,
+                                                    user_name: this.props.user_name,
+                                                    user_num: this.props.user_num,
+                                                    add_Ta: this.props.add_Ta,
+                                                    add_Tp: this.props.add_Tp,
+                                                    uu_id: this.props.uu_id,
+                                                    Tp_1: this.props.Tp_1,
+                                                    Tp_2: this.props.Tp_2,
+                                                    Tp_3: this.props.Tp_3,
+                                                    Tp_4: this.props.Tp_4,
+                                                    Tp_5: this.props.Tp_5,
+                                                    Tp_6: this.props.Tp_6,
+                                                    Tp_7: this.props.Tp_7,
+                                                    Tp_8: this.props.Tp_8,
+                                                    Tp_9: this.props.Tp_9,
+                                                    Tp_10: this.props.Tp_10,
+                                                    Tp_11: this.props.Tp_11,
+                                                    Tp_12: this.props.Tp_12,
+                                                    Tp_13: this.props.Tp_13,
+                                                    Tp_14: this.props.Tp_14,
+                                                    Tp_15: this.props.Tp_15,
+                                                    Tp_16: this.props.Tp_16,
+                                                    Tp_17: this.props.Tp_17,
+                                                    Tp_18: this.props.Tp_18,
+                                                    Tp_19: this.props.Tp_19,
+                                                    Tp_20: this.props.Tp_20,
+                                                    hb_1: this.props.hb_1,
+                                                    hb_2: this.props.hb_2,
+                                                    hb_3: this.props.hb_3,
+                                                    hb_4: this.props.hb_4,
+                                                    hb_5: this.props.hb_5,
+                                                    hb_6: this.props.hb_6,
+                                                    Ta: this.props.Ta,
+                                                    Tp: this.props.Tp,
+                                                    hp: this.props.hp,
+                                                    D1: this.props.D1,
+                                                    D2: this.props.D2,
+                                                    D3: this.props.D3,
+                                                    D4: this.props.D4,
+                                                    D5: this.props.D5,
+                                                    D6: this.props.D6,
+                                                    m: this.props.m,
+                                                    c: this.props.c,
+                                                    space1: this.props.space1,
+                                                    space2: this.props.space2,
+                                                    p1: this.props.p1,
+                                                    p2: this.props.p2,
+                                                    t: this.props.t,
+                                                    img1: this.props.img1,
+                                                    img2: this.props.img2,
+                                                    img10: this.props.img10,
+                                                    img20: this.props.img20,
+                                                    k: this.props.k
 
 
                                                 }
                                             }
                                         }>
                                             <Button type="primary" size='large'>提交</Button>
+
                                         </Link>
                                     </div>
                                 </Content>
@@ -761,9 +791,37 @@ class thermalconductivity extends Component {
                         </Col>
                     </Row>
                     <BackTop visibilityHeight={50}/>
+                    <Drawer
+                        title="热导率视频播放"
+                        placement="top"
+                        closable={true}
+                        height='90%'
+                        onClose={this.onClose}
+                        visible={this.state.visibleDrawer}
+                        style={{textAlign: 'center'}}
+                        destroyOnClose={true}
+                    >
+                        <video style={{margin: '0 auto'}} height='70%' width='70%' src="/test.mp4"
+                               controls="controls"></video>
+                    </Drawer>
                 </Style>
             </Fragment>
         )
+    }
+    componentDidMount(){
+        {this.handleHeight()}
+        window.addEventListener('resize',this.handleHeight);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize',this.handleHeight);
+    }
+
+    handleHeight=()=>{
+        const clientHeight = document.documentElement.clientHeight-184;
+        this.setState({
+            clientHeight
+        });
     }
 
 }
@@ -772,10 +830,11 @@ class thermalconductivity extends Component {
 const mapStateToProps = (state) => {
     return {
         user_id: state.getIn(['thermalconductivity', 'user_id']),
-        user_name: state.getIn(['thermalconductivity','user_name']),
+        user_name: state.getIn(['thermalconductivity', 'user_name']),
         user_num: state.getIn(['thermalconductivity', 'user_num']),
         add_Ta: state.getIn(['thermalconductivity', 'add_Ta']),
         add_Tp: state.getIn(['thermalconductivity', 'add_Tp']),
+        uu_id: state.getIn(['thermalconductivity', 'uu_id']),
         Tp_1: state.getIn(['thermalconductivity', 'Tp_1']),
         Tp_2: state.getIn(['thermalconductivity', 'Tp_2']),
         Tp_3: state.getIn(['thermalconductivity', 'Tp_3']),
@@ -828,9 +887,21 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = (dispatch) => {
     return {
         handleChangeInput(e) {
-            const {value, name} = e.target;
-            const action = actionCreators.changeInputValue(name, value);
-            dispatch(action);
+            //当判断到时数组时
+            if (e.target.getAttribute('data-type') == 'arrays') {
+                const index = e.target.getAttribute('data-index');//下表号
+                const {name, value} = e.target;//数组名,值
+                const action = actionCreators.changeInputValueArrays(name, index, value);
+                dispatch(action);
+
+
+            } else {//当判断不是数组时
+                const {value, name} = e.target;
+                const action = actionCreators.changeInputValue(name, value);
+                dispatch(action);
+
+            }
+
 
         }
     }

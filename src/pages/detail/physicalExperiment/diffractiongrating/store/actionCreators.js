@@ -26,7 +26,7 @@ export const sendData = (data) => {
     return (dispatch) => {
         axios({
             method:'post',
-            url:'/diffractiongrating/only_query/',
+            url:'/api/diffractiongrating/only_query/',
             data: {
                 id:data.id,
                 user_id:data.user_id,
@@ -98,7 +98,7 @@ export const sendDataToBackend = (data) => {
     return (dispatch) => {
         axios({
             method:'post',
-            url:'/diffractiongrating/',
+            url:'/api/diffractiongrating/',
             data: {
                 id:data.id,
                 user_id:data.user_id,

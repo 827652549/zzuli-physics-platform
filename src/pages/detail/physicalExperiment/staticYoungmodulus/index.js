@@ -14,7 +14,9 @@ class Staticyoungmodulus extends Component {
         super(props);
         this.state = {
             //利用state改变组件就会重新渲染的特性
-            updateUI: 0
+            updateUI: 0,
+            clientHeight:5
+
         }
     }
 
@@ -39,7 +41,7 @@ class Staticyoungmodulus extends Component {
                                         <Breadcrumb.Item> <Link to='/physicalExperiment/2'>
                                             杨氏静态模量实验</Link></Breadcrumb.Item>
                                     </Breadcrumb>
-                                    <div style={{background: '#fff', padding: 24, minHeight: 280}}>
+                                    <div style={{background: '#fff', padding: 24, minHeight: this.state.clientHeight}}>
                                         {/*<h3>基本资料</h3>
                                         <hr/>
                                         <br/>
@@ -346,6 +348,21 @@ class Staticyoungmodulus extends Component {
                 </Style>
             </Fragment>
         )
+    }
+    componentDidMount(){
+        {this.handleHeight()}
+        window.addEventListener('resize',this.handleHeight);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize',this.handleHeight);
+    }
+
+    handleHeight=()=>{
+        const clientHeight = document.documentElement.clientHeight-184;
+        this.setState({
+            clientHeight
+        });
     }
 
 }

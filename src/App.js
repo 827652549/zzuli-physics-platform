@@ -23,6 +23,7 @@ import drawPicture from "./pages/detail/dataHandle/drawPicture";
 import zhuChaWay from "./pages/detail/dataHandle/zhuChaWay";
 import backWay from "./pages/detail/dataHandle/backWay";
 import minDoubleWay from "./pages/detail/dataHandle/minDoubleWay";
+import Variance from "./pages/detail/generalTools/variance";
 import about from "./common/header/about";
 import callUs from "./common/header/callUs";
 
@@ -83,6 +84,14 @@ class App extends Component {
                             <Route path='/dataHandle/3' exact component={backWay}></Route>
                             {/*最小二乘法*/}
                             <Route path='/dataHandle/4' exact component={minDoubleWay}></Route>
+
+                            {/*方差工具*/}
+                            <Route path='/generalTools/0' exact component={Variance}></Route>
+                            <Route path='/generalTools/1' exact component={Variance}></Route>
+                            <Route path='/generalTools/2' exact component={Variance}></Route>
+                            <Route path='/generalTools/3' exact component={Variance}></Route>
+                            <Route path='/generalTools/4' exact component={Variance}></Route>
+                            <Route path='/generalTools/5' exact component={Variance}></Route>
 
 
 

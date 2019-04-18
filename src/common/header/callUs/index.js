@@ -1,12 +1,23 @@
 import React, {Component, Fragment} from 'react';
 import {Link} from "react-router-dom";
 import {Layout, Row, Col, Breadcrumb} from "antd";
+import 'katex/dist/katex.min.css';
+import { InlineMath, BlockMath } from 'react-katex';
 
 const {
     Footer, Content
 } = Layout;
 
+
 class callUs extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            //利用state改变组件就会重新渲染的特性
+            clientHeight:5
+        }
+    }
+
     render() {
         return (
             <Fragment>
@@ -24,11 +35,13 @@ class callUs extends Component {
                                         </Breadcrumb.Item>
                                         <Breadcrumb.Item>联系我们</Breadcrumb.Item>
                                     </Breadcrumb>
-                                    <div style={{background: '#fff', padding: 24, minHeight: 280}}>
-
+                                    {/*184是上header和下footer的高度和，和body作差得到适应高度*/}
+                                    <div style={{background: '#fff', padding: 24, minHeight: this.state.clientHeight}}>
                                         <h1>联系我们</h1>
                                         <hr/>
                                         <p style={{textIndent:'2em'}}>郑州轻工业大学物理组</p>
+                                        <span id='gs1'>2</span>
+                                        {/*<InlineMath>'c = \\pm\\sqrt{a^2 + b^2}'</InlineMath>*/}
 
                                     </div>
                                 </Content>
@@ -42,6 +55,24 @@ class callUs extends Component {
             </Fragment>
 
         )
+
+
+    }
+
+    componentDidMount(){
+        {this.handleHeight()}
+        window.addEventListener('resize',this.handleHeight);
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize',this.handleHeight);
+    }
+
+    handleHeight=()=>{
+        const clientHeight = document.documentElement.clientHeight-184;
+        this.setState({
+            clientHeight
+        });
     }
 
 

@@ -10,6 +10,13 @@ const {
 } = Layout;
 
 class showData extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            //利用state改变组件就会重新渲染的特性
+            clientHeight:5
+        }
+    }
 
     render() {
         return (
@@ -31,7 +38,7 @@ class showData extends Component {
                                         <Breadcrumb.Item>个人实验结果展示</Breadcrumb.Item>
 
                                     </Breadcrumb>
-                                    <div style={{background: '#fff', padding: 24, minHeight: 280}}>
+                                    <div style={{background: '#fff', padding: 24, minHeight: this.state.clientHeight}}>
 
                                         <h2>个人实验结果展示</h2>
                                         <br/>
@@ -467,10 +474,23 @@ class showData extends Component {
     //组件渲染之前先通过上级页面传来的数据更替store里的数据并发送ajax，然后接收到后台回传出的数据，再在此页面中操作回传的数据
     //注意，这个请求发送的是不更新数据库的操作
     componentDidMount() {
+        {this.handleHeight()}
+        window.addEventListener('resize',this.handleHeight);
         this.props.handleButtonClick(this.props.location.state);
 /*
         alert("已经将程佩发来的数据保存到newtonRing的store中，下一步，根据他返回的编写就行！")
 */
+    }
+
+    componentWillUnmount() {
+        window.removeEventListener('resize',this.handleHeight);
+    }
+
+    handleHeight=()=>{
+        const clientHeight = document.documentElement.clientHeight-184;
+        this.setState({
+            clientHeight
+        });
     }
 }
 
