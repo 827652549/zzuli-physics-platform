@@ -94,7 +94,7 @@ class Header extends Component {
                             <NavItem className={'left'}>
                                 <Link to={'/callUs'} className="aLink navigation-link">
                                     <span className="iconfont">&#xe60e;&nbsp;</span>
-                                    联系我们
+                                    帮助
                                 </Link>
                             </NavItem>
                         </Col>
