@@ -32,7 +32,7 @@ class showData extends Component {
     print = () => {
         axios({
             method:'post',
-            url:'/api/thermalconductivity_pdf/get_pdf/',
+            url:'/thermalconductivity_pdf/get_pdf/',
             data: {
                 uu_id: `${this.props.uu_id}`
             },
@@ -40,7 +40,7 @@ class showData extends Component {
            /* responseType: 'json'*/
         })
             .then((res) => {
-                let blob = new Blob([res.data], {type: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet;charset=utf-8'}); //application/vnd.openxmlformats-officedocument.spreadsheetml.sheet这里表示xlsx类型
+                let blob = new Blob([res.data], {type: 'application/pdf;charset=utf-8'}); //application/pdf这里表示pdf类型
                 let downloadElement = document.createElement('a');
                 let href = window.URL.createObjectURL(blob); //创建下载的链接
                 downloadElement.href = href;
@@ -1224,7 +1224,7 @@ class showData extends Component {
     //注意，这个请求发送的是不更新数据库的操作
     componentDidMount() {
         this.props.handleButtonClick(this.props.location.state);
-        {this.handleHeight()}
+        this.handleHeight();
         window.addEventListener('resize',this.handleHeight);
         /*
                 alert("已经将程佩发来的数据保存到newtonRing的store中，下一步，根据他返回的编写就行！")

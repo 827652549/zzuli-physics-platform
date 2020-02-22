@@ -26,7 +26,7 @@ export const sendData = (data) => {
     return (dispatch) => {
         axios({
             method:'post',
-            url:'/api/spectrometer/only_query/',
+            url:'/spectrometer/only_query/',
             data: {
                 "user_id": data.user_id,
                 "user_name": data.user_name,
@@ -87,7 +87,7 @@ export const sendDataToBackend = (data) => {
     return (dispatch) => {
         axios({
             method:'post',
-            url:'/api/spectrometer/',
+            url:'/spectrometer/',
             data: {
                 "user_id": data.user_id,
                 "user_name": data.user_name,

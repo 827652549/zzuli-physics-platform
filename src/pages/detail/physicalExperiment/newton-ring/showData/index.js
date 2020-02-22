@@ -474,7 +474,7 @@ class showData extends Component {
     //组件渲染之前先通过上级页面传来的数据更替store里的数据并发送ajax，然后接收到后台回传出的数据，再在此页面中操作回传的数据
     //注意，这个请求发送的是不更新数据库的操作
     componentDidMount() {
-        {this.handleHeight()}
+        this.handleHeight();
         window.addEventListener('resize',this.handleHeight);
         this.props.handleButtonClick(this.props.location.state);
 /*

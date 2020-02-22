@@ -30,7 +30,7 @@ export const  changePageList =(page)=>({
 
 export const getList=()=>{
     return (dispatch)=>{
-        axios.get('/headerList.json').then((res)=>{
+        axios.get('/api/headerList.json').then((res)=>{
             const data = res.data;
             const action =changeList(data.data);
             dispatch(action);

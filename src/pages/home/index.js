@@ -57,7 +57,7 @@ class Home extends Component {
                                 <Breadcrumb style={{margin: '16px 0'}}>
                                     <Breadcrumb.Item>
                                         <span className="iconfont"
-                                              style={{fontSize: '18px'}}>&#xe600;&ensp;欢迎来到物理实验模拟平台</span>
+                                              style={{fontSize: '18px'}}>&#xe600;&ensp;欢迎来到物理实验平台</span>
                                     </Breadcrumb.Item>
                                 </Breadcrumb>
                                 <div style={{background: '#fff', padding: 24, minHeight: 280}}>

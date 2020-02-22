@@ -801,15 +801,15 @@ class thermalconductivity extends Component {
                         style={{textAlign: 'center'}}
                         destroyOnClose={true}
                     >
-                        <video style={{margin: '0 auto'}} height='70%' width='70%' src="/test.mp4"
-                               controls="controls"></video>
+                        <video style={{margin: '0 auto'}} height='70%' width='70%' src="/api/test.mp4"
+                               controls="controls"/>
                     </Drawer>
                 </Style>
             </Fragment>
         )
     }
     componentDidMount(){
-        {this.handleHeight()}
+        this.handleHeight();
         window.addEventListener('resize',this.handleHeight);
     }
 
@@ -888,7 +888,7 @@ const mapDispatchToProps = (dispatch) => {
     return {
         handleChangeInput(e) {
             //当判断到时数组时
-            if (e.target.getAttribute('data-type') == 'arrays') {
+            if (e.target.getAttribute('data-type') === 'arrays') {
                 const index = e.target.getAttribute('data-index');//下表号
                 const {name, value} = e.target;//数组名,值
                 const action = actionCreators.changeInputValueArrays(name, index, value);

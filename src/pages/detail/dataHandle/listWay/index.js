@@ -171,7 +171,7 @@ class listWay extends Component {
         )
     }
     componentDidMount(){
-        {this.handleHeight()}
+        this.handleHeight();
         window.addEventListener('resize',this.handleHeight);
     }
 

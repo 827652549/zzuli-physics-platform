@@ -2,7 +2,6 @@ import React, {Component, Fragment} from 'react';
 import {Link} from "react-router-dom";
 import {Layout, Row, Col, Breadcrumb} from "antd";
 import 'katex/dist/katex.min.css';
-import { InlineMath, BlockMath } from 'react-katex';
 
 const {
     Footer, Content
@@ -60,7 +59,7 @@ class callUs extends Component {
     }
 
     componentDidMount(){
-        {this.handleHeight()}
+        this.handleHeight();
         window.addEventListener('resize',this.handleHeight);
     }
 

@@ -1495,7 +1495,7 @@ class Variance extends Component {
         )
     }
     componentDidMount(){
-        {this.handleHeight()}
+        this.handleHeight();
         window.addEventListener('resize',this.handleHeight);
     }
 

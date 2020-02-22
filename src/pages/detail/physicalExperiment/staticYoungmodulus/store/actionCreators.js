@@ -26,7 +26,7 @@ export const sendData = (data) => {
     return (dispatch) => {
         axios({
             method:'post',
-            url:'/api/staticyoungmodulus/only_query/',
+            url:'/staticyoungmodulus/only_query/',
             data: {
                 n0:data.n0,
                 n1:data.n1,
@@ -100,7 +100,7 @@ export const sendDataToBackend = (data) => {
     return (dispatch) => {
         axios({
             method:'post',
-            url:'/api/staticyoungmodulus/',
+            url:'/staticyoungmodulus/',
             data: {
                 n0:data.n0,
                 n1:data.n1,
