@@ -39,7 +39,9 @@ class callUs extends Component {
                                         <h1>联系我们</h1>
                                         <hr/>
                                         <p style={{textIndent:'2em'}}>郑州轻工业大学物理组</p>
-                                        <span id='gs1'>2</span>
+                                        <span id='gs1'>
+                                            联系电话：XXX-XXXXXXXX
+                                        </span>
                                         {/*<InlineMath>'c = \\pm\\sqrt{a^2 + b^2}'</InlineMath>*/}
 
                                     </div>

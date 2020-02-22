@@ -42,13 +42,13 @@ class showData extends Component {
 
                                         <h2>个人实验结果展示</h2>
                                         <br/>
-                                        <h3>个人信息</h3>
-                                        <hr/>
-                                        <ol>
-                                            <li>姓名：{this.props.user_name}</li>
-                                            <li>学号：{this.props.user_num}</li>
-                                        </ol>
-                                        <br/>
+                                        {/*<h3>个人信息</h3>*/}
+                                        {/*<hr/>*/}
+                                        {/*<ol>*/}
+                                            {/*<li>姓名：{this.props.user_name}</li>*/}
+                                            {/*<li>学号：{this.props.user_num}</li>*/}
+                                        {/*</ol>*/}
+                                        {/*<br/>*/}
                                         <h3>数据记录</h3>
                                         <hr/>
                                         <br/>
@@ -450,7 +450,8 @@ class showData extends Component {
                                             {/*
                                             TODO 等程佩会算了再填
                                             */}
-                                            <Col span={6}><strong>半波损失</strong><br/><Input  value='程佩还没算出来'/></Col>
+                                            {/*<Col span={6}><strong>半波损失</strong><br/><Input  value='程佩还没算出来'/></Col>*/}
+                                            <Col span={6}><strong>半波损失</strong><br/><Input  value={this.props.anwser*this.props.uncertainty}/></Col>
                                             <Col span={6}><strong>钠光波长</strong><br/><Input  value={this.props.lamda}/></Col>
                                             <Col span={6}><strong>波长不确定度</strong><br/><Input  value={this.props.uncertainty}/></Col>
                                         </Row>
