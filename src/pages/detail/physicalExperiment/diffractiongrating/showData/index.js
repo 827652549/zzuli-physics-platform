@@ -330,7 +330,7 @@ class showData extends Component {
     componentDidMount() {
 
         this.props.handleButtonClick(this.props.location.state);
-        {this.handleHeight()}
+        this.handleHeight();
         window.addEventListener('resize',this.handleHeight);
     }
 }
