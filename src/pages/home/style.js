@@ -97,4 +97,7 @@ export const Style =styled.span`
 #link{
     color:rgba(0,0,0,0.65);
 }
+h1{
+font-size:25px;
+}
 `;

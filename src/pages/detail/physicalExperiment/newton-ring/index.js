@@ -260,7 +260,7 @@ class NewtonRing extends Component {
                                         <Row gutter={24}>
                                             <Col span={6}><strong>仪器允差（读数显微镜）</strong><br/><Input onChange={e => handleChangeInput(e)}
                                                                                                   name='Instrumenttolerance'/></Col>
-                                            <Col span={6}><strong>半波损失</strong><br/><Input value='程佩还没算出来'/></Col>
+                                            <Col span={6}><strong>半波损失</strong><br/><Input /></Col>
                                             <Col span={6}><strong>钠光波长</strong><br/><Input onChange={e => handleChangeInput(e)}
                                                                                            name='lamda'/></Col>
                                             <Col span={6}><strong>波长不确定度</strong><br/><Input  onChange={e => handleChangeInput(e)}
