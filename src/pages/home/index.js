@@ -19,7 +19,7 @@ const data1 = [
 ];
 
 const data2 = [
-    '逐差工具组',
+    '方差工具',
     // '标准差工具',
     // '方差工具',
     // '进制转换工具',
@@ -72,7 +72,7 @@ class Home extends Component {
                                               style={{fontSize: '18px'}}>&#xe600;&ensp;欢迎来到物理实验数据处理平台</span>
                                     </Breadcrumb.Item>
                                 </Breadcrumb>
-                                <div style={{background: '#fff'}}>
+                                <div style={{background: '#fff', paddingTop: 15,paddingLeft:10,paddingRight:10,paddingBottom:50, minHeight: 550}}>
                                     <Carousel autoplay>
                                         <div><h1>物理实验就是人类追寻科学的印迹</h1></div>
                                         <div><h1>人们在一次一次的科学试验中不断总结方法</h1></div>

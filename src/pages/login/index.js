@@ -7,7 +7,11 @@ class Login extends Component {
     render() {
         if(!this.props.ifLogin)
         return (
-            <button onClick={this.props.handleLogin}>登录</button>
+            <h1>
+                <p></p>
+                404:本页面无内容，等待开发中～～～
+                {/*<button onClick={this.props.handleLogin}>登录</button>*/}
+            </h1>
         )
         else
             return (
@@ -25,7 +29,7 @@ const mapDispatchToProps = (dispatch) => {
             const action ={
                 type:'login',
                 value:true
-            }
+            };
             dispatch(action);
         }
     }
