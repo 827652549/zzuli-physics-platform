@@ -31,6 +31,7 @@ export const GlobalSytle =createGlobalStyle`
       }
       body {
           line-height: 1;
+          min-width:560px;
       }
       ol, ul {
           list-style: none;

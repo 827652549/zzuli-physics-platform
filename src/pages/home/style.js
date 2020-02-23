@@ -4,25 +4,24 @@ export const Style =styled.span`
 
 /*轮播图的属性*/
 .ant-carousel .slick-slide {
-    text-align: center;
-    height: 260px;
-    background: #364d79;
-    overflow: hidden;
-    padding: 0 20px;
+ text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
 }
 
 .ant-carousel .slick-slide h1 {
-    margin-top: 5%;
     color: #fff;
 }
 
-@media screen and (min-width:0px) and (max-width:375px){h1{font-size:11px;margin-top:50px;}}
-@media screen and (min-width:376px) and (max-width:414px){h1{font-size:12px;margin-top:50px;}}
-@media screen and (min-width:415px) and (max-width:639px){h1{font-size:15px;margin-top:50px;}}
-@media screen and (min-width:640px) and (max-width:719px){h1{font-size:20px;margin-top:50px;}}
-@media screen and (min-width:720px) and (max-width:749px){h1{font-size:22.5px}}
-@media screen and (min-width:750px) and (max-width:799px){h1{font-size:23.5px}}
-@media screen and (min-width:800px){h1{font-size:25px}}
+// @media screen and (min-width:0px) and (max-width:375px){h1{font-size:11px;margin-top:50px;}}
+// @media screen and (min-width:376px) and (max-width:414px){h1{font-size:12px;margin-top:50px;}}
+// @media screen and (min-width:415px) and (max-width:639px){h1{font-size:15px;margin-top:50px;}}
+// @media screen and (min-width:640px) and (max-width:719px){h1{font-size:20px;margin-top:50px;}}
+// @media screen and (min-width:720px) and (max-width:749px){h1{font-size:22.5px}}
+// @media screen and (min-width:750px) and (max-width:799px){h1{font-size:23.5px}}
+// @media screen and (min-width:800px){h1{font-size:25px}}
 
 #components-layout-demo-top .logo {
     width: 120px;

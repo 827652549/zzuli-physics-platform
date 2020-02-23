@@ -6,7 +6,7 @@ export const HeaderWrapper = styled.div`
     border-bottom: 1px solid #f0f0f0;
     background-color:#2d457a;
 `
-export const Logo=styled.div`
+export const Logo = styled.div`
     position:absolute;
     top:0;
     left:0;
@@ -16,19 +16,19 @@ export const Logo=styled.div`
     background:url(${logoPic});
     background-size:contain;/*自适应最大尺寸*/
 `;
-export const Nav=styled.div`
+export const Nav = styled.div`
     width:960px;
     height:100%;
     margin:0 auto;
     padding-right:70px;
     box-sizing:border-box;
 `;
-export const NavItem=styled.div`
+export const NavItem = styled.div`
        line-height:56px;
        padding:0 15px;
        font-size:17px;
        color:#fff;
-
+min-width:100px;
     &.left{
         float:left;
     }
@@ -43,7 +43,7 @@ export const NavItem=styled.div`
         color:#fff;
     }
 `;
-export const SearchWrapper=styled.div`
+export const SearchWrapper = styled.div`
      float:left;
      position:relative;
      .zoom{
@@ -67,9 +67,8 @@ export const SearchWrapper=styled.div`
 `;
 
 
-
-export const NavSearch=styled.input.attrs({
-    placeholder:'搜索'
+export const NavSearch = styled.input.attrs({
+    placeholder: '搜索'
 })`
         width:160px;
         height:38px;
@@ -104,13 +103,13 @@ export const NavSearch=styled.input.attrs({
      }
 `;
 
-export const Addition=styled.div`
+export const Addition = styled.div`
     position:absolute;
     right:0;
     top:0;
     height:56px;
 `;
-export const Button=styled.div`
+export const Button = styled.div`
     line-height:38px;
     margin-top:9px;
     margin-right:20px;
@@ -123,7 +122,7 @@ export const Button=styled.div`
     }
  `;
 
-export const SearchInfo=styled.div`
+export const SearchInfo = styled.div`
     position:absolute;
     left:0;
     top:56px;
@@ -134,7 +133,7 @@ export const SearchInfo=styled.div`
     z-index:100;
 `;
 
-export const SearchInfoTitle=styled.div`
+export const SearchInfoTitle = styled.div`
     margin-top:20px;
     margin-bottom:15px;
     line-height:14px;
@@ -143,7 +142,7 @@ export const SearchInfoTitle=styled.div`
     
 `;
 
-export const SearchInfoSwitch=styled.div`
+export const SearchInfoSwitch = styled.div`
     float:right;
     font-size:13px;
     .spin{
@@ -160,11 +159,11 @@ export const SearchInfoSwitch=styled.div`
         cursor:pointer;
     }
 `;
-export  const SearchInfoList=styled.div`
+export const SearchInfoList = styled.div`
     overflow:hidden;
 `;
 
-export const SearchInfoItem=styled.a`
+export const SearchInfoItem = styled.a`
     display:block;
     float:left;
     padding:0 5px;
@@ -176,7 +175,7 @@ export const SearchInfoItem=styled.a`
     color:#787878;
     border-radius:3px;
 `;
-export const Style=styled.span`
+export const Style = styled.span`
     
 .aLink {
     color: #ffffff;

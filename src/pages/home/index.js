@@ -69,15 +69,15 @@ class Home extends Component {
                                 <Breadcrumb style={{margin: '16px 0'}}>
                                     <Breadcrumb.Item>
                                         <span className="iconfont"
-                                              style={{fontSize: '18px'}}>&#xe600;&ensp;欢迎来到物理实验平台</span>
+                                              style={{fontSize: '18px'}}>&#xe600;&ensp;欢迎来到物理实验数据处理平台</span>
                                     </Breadcrumb.Item>
                                 </Breadcrumb>
-                                <div style={{background: '#fff', padding: 24, minHeight: 280}}>
+                                <div style={{background: '#fff'}}>
                                     <Carousel autoplay>
-                                        <div style={{lineHeight:'280px',minHeight:'280px'}}><h1>认识来自实践，科学进步依赖于科学实验中的重大发现，物理实验就是人类追寻科学的印迹。</h1></div>
-                                        <div><h1>人们在一次一次的科学试验中不断总结方法，提炼原理，又用已知原理去指导实验方法，为了简便快捷又发明了各种测量工具和仪器。</h1></div>
-                                        <div><h1>在大学物理实验中，我们重复经典实验，从中学习前人智慧，体验发现过程，进行基本的实验训练，提高自己的科学实验技能和素养。</h1></div>
-                                        <div><h1>使用良好的数据处理方法，更易于从纷繁复杂的实验现象和数据中发现简单的规律。</h1></div>
+                                        <div><h1>物理实验就是人类追寻科学的印迹</h1></div>
+                                        <div><h1>人们在一次一次的科学试验中不断总结方法</h1></div>
+                                        <div><h1>在大学物理实验中学习前人智慧</h1></div>
+                                        <div><h1>从纷繁复杂的实验现象和数据中发现简单的规律</h1></div>
                                     </Carousel>
                                     <hr/>
                                     <Row>
