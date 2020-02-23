@@ -97,6 +97,7 @@ export const sendData = (data) => {
  * @returns {Function}
  */
 export const sendDataToBackend = (data) => {
+    console.log(data);
     return (dispatch) => {
         axios({
             method:'post',
@@ -151,11 +152,12 @@ export const sendDataToBackend = (data) => {
                 E:data.E,
                 delta_E:data.delta_E,
                 relative_E: data.relative_E
+
             },
             responseType: 'json'
         })
             .then((res) => {
-                alert("上传成功")
+                alert("上传成功");
                 console.log('杨氏静态第二次上传成功');
             }).catch(() => {
                 console.log('上传失败');

@@ -46,8 +46,8 @@ class showData extends Component {
                                         {/*<h3>个人信息</h3>*/}
                                         {/*<hr/>*/}
                                         {/*<ol>*/}
-                                            {/*<li>姓名：{this.props.user_name}</li>*/}
-                                            {/*<li>学号：{this.props.user_num}</li>*/}
+                                            {/*<li style={{display:'none'}}>姓名：{this.props.user_name}</li>*/}
+                                            {/*<li style={{display:'none'}}>学号：{this.props.user_num}</li>*/}
                                         {/*</ol>*/}
                                         {/*<br/>*/}
                                         <h3>数据记录</h3>

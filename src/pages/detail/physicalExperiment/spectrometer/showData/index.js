@@ -41,13 +41,13 @@ class showData extends Component {
                                     <div style={{background: '#fff', padding: 24, minHeight: this.state.clientHeight}}>
 
                                         <h2>个人实验结果展示</h2>
-                                        <br/>
-                                        <h3>个人信息</h3>
-                                        <hr/>
-                                        <ol>
-                                            <li>姓名：{this.props.user_name}</li>
-                                            <li>学号：{this.props.user_num}</li>
-                                        </ol>
+                                        {/*<br/>*/}
+                                        {/*<h3>个人信息</h3>*/}
+                                        {/*<hr/>*/}
+                                        {/*<ol>*/}
+                                            {/*<li>姓名：{this.props.user_name}</li>*/}
+                                            {/*<li>学号：{this.props.user_num}</li>*/}
+                                        {/*</ol>*/}
                                         <br/>
                                         <h3>数据记录</h3>
                                         <hr/>

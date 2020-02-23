@@ -44,11 +44,11 @@ class showData extends Component {
                                         <br/>
                                         <h3>个人信息</h3>
                                         <hr/>
-                                        <ol>
-                                            <li>姓名：苏一恒</li>
-                                            <li>学号：4343432323123213</li>
-                                        </ol>
-                                        <br/>
+                                        {/*<ol>*/}
+                                            {/*<li>姓名：苏一恒</li>*/}
+                                            {/*<li>学号：4343432323123213</li>*/}
+                                        {/*</ol>*/}
+                                        {/*<br/>*/}
                                         <h3>静态拉伸法测杨氏模量数据记录</h3>
                                         <hr/>
                                         <span className='tipSpan'>1、不同荷重时光标的位置Xi</span>
