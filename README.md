@@ -11,6 +11,10 @@
 
 &emsp;&emsp;React、Redux、Ant Design、Axios、Styled-Components
 
+**数据流图**:
+
+![react-redux运用下的数据流图](https://s2.ax1x.com/2020/02/25/3tTGuT.md.jpg)
+
 **功能说明**:
 
 1. 学生将实验课数据导入平台中，系统自动处理数据并导出相关实验报告。所有学生相关数据都会保存到数据库中，以供老师在后台系统中查阅总结。

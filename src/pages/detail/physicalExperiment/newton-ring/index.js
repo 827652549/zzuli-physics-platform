@@ -371,7 +371,8 @@ const mapStateToProps = (state) => {
         uncertainty: state.getIn(['newtonRing', 'uncertainty']),
         anwser: state.getIn(['newtonRing', 'anwser'])
     }
-}
+};
+
 const mapDispatchToProps = (dispatch) => {
     return {
         handleChangeInput(e) {
@@ -381,6 +382,6 @@ const mapDispatchToProps = (dispatch) => {
 
         }
     }
-}
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(withRouter(NewtonRing));
