@@ -89,11 +89,11 @@ class App extends Component {
 
                                 {/*方差工具*/}
                                 <Route path='/generalTools/0' exact component={Variance}></Route>
-                                <Route path='/generalTools/1' exact component={Variance}></Route>
-                                <Route path='/generalTools/2' exact component={Variance}></Route>
-                                <Route path='/generalTools/3' exact component={Variance}></Route>
-                                <Route path='/generalTools/4' exact component={Variance}></Route>
-                                <Route path='/generalTools/5' exact component={Variance}></Route>
+                                {/*<Route path='/generalTools/1' exact component={Variance}></Route>*/}
+                                {/*<Route path='/generalTools/2' exact component={Variance}></Route>*/}
+                                {/*<Route path='/generalTools/3' exact component={Variance}></Route>*/}
+                                {/*<Route path='/generalTools/4' exact component={Variance}></Route>*/}
+                                {/*<Route path='/generalTools/5' exact component={Variance}></Route>*/}
 
 
                                 <Route path='/login' exact component={Login}></Route>
