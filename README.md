@@ -7,6 +7,8 @@
 
 &emsp;&emsp;该项目是校物理教师组委托开发，用于简化本科阶段物理实验数据处理操作的响应式在线Web平台。
 
+> ✅该项目后端服务器已经部署，直接启动项目即刻预览！
+
 **核心技术**:
 
 &emsp;&emsp;React、Redux、Ant Design、Axios、Styled-Components

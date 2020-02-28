@@ -41,7 +41,6 @@ class callUs extends Component {
                                         <span id='gs1'>
                                             联系电话：XXX-XXXXXXXX
                                         </span>
-                                        {/*<InlineMath>'c = \\pm\\sqrt{a^2 + b^2}'</InlineMath>*/}
 
                                     </div>
                                 </Content>
