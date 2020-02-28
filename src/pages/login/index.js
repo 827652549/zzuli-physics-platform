@@ -3,6 +3,9 @@ import {connect} from 'react-redux';
 import {Redirect} from "react-router-dom";
 
 
+/**
+ * 本来这个页面是login，现在姑且当404借用一下
+ */
 class Login extends Component {
     render() {
         if(!this.props.ifLogin)

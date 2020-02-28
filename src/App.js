@@ -99,11 +99,6 @@ class App extends Component {
                                 <Route path='/login' exact component={Login}></Route>
                                 <Redirect to="/login" />
                             </Switch>
-
-
-
-
-
                         </div>
                     </BrowserRouter>
 
