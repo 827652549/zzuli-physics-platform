@@ -1,7 +1,6 @@
 import React, {Component, Fragment} from 'react';
 import {Link} from "react-router-dom";
 import {Layout, Row, Col, Breadcrumb} from "antd";
-import 'katex/dist/katex.min.css';
 
 const {
     Footer, Content
@@ -25,7 +24,7 @@ class callUs extends Component {
                         <Col span={24}>
                             <Layout className="layout">
                                 <Content style={{padding: '0 50px'}}>
-                                    <Breadcrumb style={{margin: '16px 0'}}>
+                                    <Breadcrumb  style={{margin: '16px 0'}}>
                                         <Breadcrumb.Item>
                                             <Link to='/'>
                                                 <span className="iconfont" style={{fontSize: '18px'}}>&#xe600;&ensp;</span>
